@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+html {font-family: arial, sans-serif;}
+p,a {  
+    font-size:120%;
+    color: #a6a6a6;
+}
+.navbar {
+    background-color: rgb(63, 84, 105);
+    padding: 40px 20px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar a {
+    display: inline;
+    float: left;
+    padding: 0px 14px;
+    text-align:center;
+    font-size:14px;
+    text-decoration:none;
+}
+#navbar-item-distant {margin-left: 0;}
+.header {position: relative;padding: 0 25px;}
+
+#picture-header {display: none;}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.main {
+    padding: 10px 15px 30px 15px;
+    margin: 0;
+}
+.responsive-image img {
+    width: 95%;
+    height: auto;
+    margin-top: 8%;
+}
+.footer {padding:0 15px;margin: 0;}
+/*For mobile phones*/
+[class*="col-"] {
+    width:100%;
+    padding: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+    /*For tablets*/
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    [class*="col-"] {float: left;}
+    #navbar-item-distant {margin-left: 65%;}
+}
+@media only screen and (min-width: 992px) {
+    /*For desktop*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    [class*="col-"] {float: left;}
+    .navbar {background-color: #ffffff;}
+    .navbar a {color: black}
+    #navbar-item-distant {margin-left: 75%;}
+    #picture-header {display: block;width: 100%;}
+    .header {padding: 0;}
+    h1 {margin-bottom: -4%;font-size: 400%;font-family: Times, serif;}
+    #content {position: absolute;top: 20%;left: 5%;color: white;}
+    .main {background-color: #e6e6e6;}
+    .footer {background-color: #f0f0f0;}
+    .footer a {text-decoration: none;color: blue;}
+}
